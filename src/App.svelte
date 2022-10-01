@@ -32,7 +32,7 @@
 
 <main>
     <h1 id="holy" class={saboo}>{getBress}</h1>
-    <h2 class={isFinish ? "" : "go"}>กด f เพื่อบูชา</h2>
+    <h2 class={isFinish ? "" : "go"} on:click={worship}>กด f หรือคลิกเพื่อบูชา</h2>
 </main>
 
 <style>
