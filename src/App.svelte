@@ -32,11 +32,28 @@
 
 <main>
     <h1 id="holy" class={saboo}>{getBress}</h1>
-    <h2 style="{isFinish ?"opacity: 1;" : "opacity: 0;"}">กด f เพื่อบูชา</h2>
+    <h2 class={isFinish ? "" : "go"}>กด f เพื่อบูชา</h2>
 </main>
 
 <style>
-  .opacity-0 {
-    opacity: 0;
-  }
+    #holy {
+        display: inline-block;
+    }
+    .go {
+        opacity: 0;
+        animation: gone 7s ease;
+    }
+    @keyframes gone {
+        0%{
+            opacity: 1;
+            transform: translate(0, 0);
+        }
+        50% {
+            opacity: .5;
+        }
+        100% {
+            opacity: 0;
+            transform: translate(0, -100px);
+        }
+    }
 </style>
