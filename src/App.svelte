@@ -32,7 +32,7 @@
 
 <main>
     <h1 id="holy" class={saboo}>{getBress}</h1>
-    <h2 class={isFinish ? "click" : "click go"} on:click={worship}>
+    <h2 style="color: black;" class={isFinish ? "click" : "click go"} on:click={worship}>
         กด f หรือคลิกเพื่อบูชา
     </h2>
     <div>
@@ -57,6 +57,7 @@
         text-decoration: underline;
     }
     #holy {
+        color: black;
         display: inline-block;
     }
     .go {
